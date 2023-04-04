@@ -1,3 +1,3 @@
 # practice-1
 
-https://github.com/ArtyomXXX/practice-1
+https://artyomxxx.github.io/practice-1/
