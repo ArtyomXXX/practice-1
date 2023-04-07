@@ -68,9 +68,17 @@
                         </div>
                     </div>
                     <div class="input-container mb-0">
-                        <input id="direction" class="input input-with-icon label-effect" type="text" placeholder=" " required />
-                        <label for="direction" class="placeholder-effect placeholder"><span>✱</span> Направление</label>
-                        <img src="./assets/Icons/chevron-down.svg" alt="" />
+                        <div class="dropdown">
+                            <input id="direction" class="dropdown__input-hidden input input-with-icon label-effect" type="text" name="select-category" value="" placeholder=" " required />
+                            <label for="direction" class="placeholder-effect placeholder"><span>✱</span> Направление</label>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__list-item" data-value="travel">Экология</li>
+                                <li class="dropdown__list-item" data-value="lessons">Биоремедиатор</li>
+                                <li class="dropdown__list-item" data-value="photo">Разработчик природоохранного ПО</li>
+                                <li class="dropdown__list-item" data-value="sport">Эколог-логист</li>
+                            </ul>
+                            <button class="dropdown__button"></button>
+                        </div>
                     </div>
                 </div>
     

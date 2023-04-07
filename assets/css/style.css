@@ -275,7 +275,7 @@
     margin-bottom: 15px;
 }
 .submit-button:hover {
-    background-color: #FF03AFC8;
+    background-color: #67134c;
 }
 
 .reset-button {
@@ -287,6 +287,96 @@
     background: none;
     margin: 0 auto;
 }
+
+/* ________________________________________ Select JS */
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown__button {
+	position: relative;
+	display: block;
+    width: 100%;
+    height: 56px;
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid #D6DADE;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    padding: 30px 16px;
+}
+
+.dropdown__button::after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+
+	/* Рисуем треугольник */
+    width: 0;
+    height: 0;
+    border-width: 10.4px 6px 0 6px;
+    border-color: #79849B transparent transparent transparent;
+	border-style: solid;
+
+	/* Снимаем клик с треугольника */
+	pointer-events: none;
+}
+
+
+.dropdown__list {
+	display: none;
+
+	position: absolute;
+	left: 0;
+	top: 52px;
+
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	background: #FFFFFF;
+	box-shadow: 0px 4px 8px rgba(176, 198, 225, 0.6);
+	overflow: hidden;
+
+	border-radius: 6px;
+	width: 100%;
+
+	z-index: 1;
+}
+
+.dropdown__list--visible {
+	display: block;
+}
+
+.dropdown__list-item {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #7E9BBD;
+	border-bottom: 0px;
+	padding: 13px 20px;
+	cursor: pointer;
+}
+
+.dropdown__list-item:first-child {
+	border-radius: 6px 6px 0 0;
+}
+
+.dropdown__list-item:last-child {
+	border-radius: 0 0 6px 6px;
+	border-bottom: 1px solid #7E9BBD;
+}
+
+.dropdown__list-item:hover {
+	background: rgba(176, 198, 225, 0.26);
+}
+
+.dropdown__input-hidden {
+	display: none;
+}
+
 
 /* ________________________________________ Add Zoom Animation */
 
