@@ -1,10 +1,10 @@
-let open_modal = document.getElementById('open');
-let close_modal = document.getElementById('close');
-let modal = document.getElementsByClassName('modal');
+const openModal = document.getElementById('open');
+const closeModal = document.getElementById('close');
+const modal = document.getElementsByClassName('modal');
 
 modal.onclick = function(event) {
-    if (event.target == close_modal) {
-        open_modal.style.display = "none";
+    if (event.target == closeModal) {
+        openModal.style.display = "none";
     }
 }
 
@@ -26,6 +26,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 	const dropDownList = dropDownWrapper.querySelector('.dropdown__list');
 	const dropDownListItems = dropDownList.querySelectorAll('.dropdown__list-item');
 	const dropDownInput = dropDownWrapper.querySelector('.dropdown__input-hidden');
+    const dropDownBtnReset = document.getElementById('reset');
 
 	// Клик по кнопке. Открыть/Закрыть select
 	dropDownBtn.addEventListener('click', function (e) {
@@ -44,17 +45,15 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 		});
 	});
 
+    dropDownBtnReset.addEventListener('click', function (e) {
+			e.stopPropagation();
+			dropDownBtn.innerText = this.innerText = "";
+			dropDownList.classList.remove('dropdown__list--visible');
+		});
+
 	// Клик снаружи дропдауна. Закрыть дропдаун
 	document.addEventListener('click', function (e) {
 		if (e.target !== dropDownBtn) {
-			dropDownBtn.classList.remove('dropdown__button--active');
-			dropDownList.classList.remove('dropdown__list--visible');
-		}
-	});
-
-	// Нажатие на Tab или Escape. Закрыть дропдаун
-	document.addEventListener('keydown', function (e) {
-		if (e.key === 'Tab' || e.key === 'Escape') {
 			dropDownBtn.classList.remove('dropdown__button--active');
 			dropDownList.classList.remove('dropdown__list--visible');
 		}

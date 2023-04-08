@@ -69,15 +69,15 @@
                     </div>
                     <div class="input-container mb-0">
                         <div class="dropdown">
-                            <input id="direction" class="dropdown__input-hidden input input-with-icon label-effect" type="text" name="select-category" value="" placeholder=" " required />
-                            <label for="direction" class="placeholder-effect placeholder"><span>✱</span> Направление</label>
+                            <button class="dropdown__button"></button>
                             <ul class="dropdown__list">
                                 <li class="dropdown__list-item" data-value="travel">Экология</li>
                                 <li class="dropdown__list-item" data-value="lessons">Биоремедиатор</li>
                                 <li class="dropdown__list-item" data-value="photo">Разработчик природоохранного ПО</li>
                                 <li class="dropdown__list-item" data-value="sport">Эколог-логист</li>
                             </ul>
-                            <button class="dropdown__button"></button>
+                            <input id="direction" class="dropdown__input-hidden input input-with-icon select-js-label-effect" type="text" name="select-category" value="" placeholder=" " required />
+                            <label for="direction" class="select-js-placeholder-effect placeholder"><span>✱</span> Направление</label>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
                 <input class="submit-button form-button" type="submit" value="Стать партнёром проекта" required />
-                <input class="reset-button form-button" type="reset" value="Отменить" required />
+                <input id="reset" class="reset-button form-button" type="reset" value="Отменить" required />
             </form>
         </div>
     </div>
