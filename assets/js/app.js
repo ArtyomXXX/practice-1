@@ -1,16 +1,3 @@
-const openModal = document.getElementById('open');
-const closeModal = document.getElementById('close');
-const modal = document.getElementsByClassName('modal');
-
-modal.onclick = function(event) {
-    if (event.target == closeModal) {
-        openModal.style.display = "none";
-    }
-}
-
-
-
-
 // Полифилл для метода forEach для NodeList
 if (window.NodeList && !NodeList.prototype.forEach) {
 	NodeList.prototype.forEach = function (callback, thisArg) {

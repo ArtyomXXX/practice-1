@@ -72,27 +72,6 @@
     box-shadow: 0 4px 15px 0 rgba(34, 189, 183, 0.75);
   }
 
-/* ________________________________________ Close */
-
-.close-button {
-    width: 28px;
-    height: 28px;
-    border: 1px solid #6A6E72;
-    background-color: #cb0505;
-    border-radius: 50%;
-    padding: 3px 0 0;
-    cursor: pointer;
-
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1;
-}
-
-.close-button:hover {
-    background-color: #ff0000;
-}
-
 /* ________________________________________ Form */
 
 .form {
