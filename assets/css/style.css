@@ -251,10 +251,6 @@
 
 /* ________________________________________ Form buttons */
 
-.form-button {
-    cursor: pointer;
-}
-
 .submit-button {
     width: 100%;
     height: 48px;
@@ -264,6 +260,7 @@
     background-color: #E5266E;
     border-radius: 4px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 .submit-button:hover {
     background-color: #67134c;
@@ -277,6 +274,7 @@
     color: #0848C0;
     background: none;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 /* ________________________________________ Select JS */
