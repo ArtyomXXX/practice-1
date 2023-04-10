@@ -9,7 +9,6 @@ cancelBtn.addEventListener("click", () => {
   openModalBtn.addEventListener("click", () => {
 	modal.style.display = "block";
   });
-  
 
 
 // Полифилл для метода forEach для NodeList
@@ -32,7 +31,6 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 	// Клик по кнопке. Открыть/Закрыть select
 	dropDownBtn.addEventListener('click', function (e) {
 		dropDownList.classList.toggle('dropdown__list--visible');
-        this.classList.add('dropdown__button--active');
 	});
 
 	// Выбор элемента списка. Запомнить выбранное значение. Закрыть дропдаун
@@ -47,9 +45,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 	});
 
     dropDownBtnReset.addEventListener('click', function (e) {
-			e.stopPropagation();
 			dropDownBtn.innerText = this.innerText = "";
-			dropDownList.classList.remove('dropdown__list--visible');
 		});
 
 	// Клик снаружи дропдауна. Закрыть дропдаун

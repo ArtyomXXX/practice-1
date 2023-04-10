@@ -96,7 +96,7 @@
     margin-bottom: 50px;
 }
 
-/* ________________________________________ Personal__info | Select__file__wrapper | Choose__logo */
+/* ________________________________________ Personal__info | Select__file__wrapper | Select__logo */
 
 .personal-info {
     display: grid;
@@ -140,7 +140,7 @@
   margin-bottom: 13px;
 }
 
-.choose-logo-layer-1 {
+.select-logo-layer-1 {
     margin: 0 auto;
     height: 300px;
     width: 100px;
@@ -157,7 +157,7 @@
     z-index: 1;
 }
 
-.choose-logo-layer-2 {
+.select-logo-layer-2 {
     width: 100%;
     height: 100%;
     position: relative;
@@ -166,11 +166,11 @@
     justify-content: center;
     align-items: center;
 }
-.choose-logo-layer-2 > img {
+.select-logo-layer-2 > img {
     margin-bottom: 7px;
 }
 
-.choose-logo {
+.select-logo {
     width: 100%;
     height: 100%;
     cursor: pointer;
@@ -264,7 +264,7 @@
     cursor: pointer;
 }
 .submit-button:hover {
-    background-color: #67134c;
+    background-color: #9c1371;
 }
 
 .cancel-button {
