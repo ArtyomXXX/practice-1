@@ -2,11 +2,11 @@ const modal = document.getElementById('modal');
 const cancelBtn = document.getElementById('cancel-button');
 const openModalBtn = document.getElementById('open-modal-button');
 
-cancelBtn.addEventListener("click", () => {
+cancelBtn.addEventListener('click', () => {
 	modal.style.display = "none";
   });
   
-  openModalBtn.addEventListener("click", () => {
+  openModalBtn.addEventListener('click', () => {
 	modal.style.display = "block";
   });
 
