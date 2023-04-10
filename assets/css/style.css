@@ -42,7 +42,7 @@
     padding-top: 300px;
 }
 
-.open-button {
+.open-modal-button {
     width: 200px;
     font-size: 16px;
     font-weight: 600;
@@ -60,14 +60,14 @@
     transition: all .4s ease-in-out;
   }
   
-  .open-button:hover {
+  .open-modal-button:hover {
     background-position: 100% 0;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
   }
   
-  .open-button.gradient {
+  .open-modal-button.gradient {
     background-image: linear-gradient(to right, #1A92C3, #00FFD0, #00FF84, #27D07F);
     box-shadow: 0 4px 15px 0 rgba(34, 189, 183, 0.75);
   }
@@ -267,7 +267,7 @@
     background-color: #67134c;
 }
 
-.reset-button {
+.cancel-button {
     width: auto;
     height: auto;
     font-size: 16px;
@@ -298,21 +298,19 @@
 }
 
 .dropdown__button::after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	right: 15px;
-	transform: translateY(-50%);
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(45deg);
 
-	/* Рисуем треугольник */
-    width: 0;
-    height: 0;
-    border-width: 10.4px 6px 0 6px;
-    border-color: #79849B transparent transparent transparent;
-	border-style: solid;
-
-	/* Снимаем клик с треугольника */
-	pointer-events: none;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    z-index: 1;
 }
 
 .dropdown__list {
@@ -389,11 +387,6 @@
     .modal-content {
         width: 80%; 
         height: auto;
-        background-color: #FFFFFF;
-        border-radius: 12px;
-        margin: 5px auto;
-        padding: 53px 97px;
-        position: relative;
     }
 }
 

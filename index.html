@@ -14,7 +14,7 @@
     <div class="container">
         <div class="open-button-wrapper">
             <h1 class="title">Модальное окно</h1>
-            <button class="open-button gradient" type="button" onclick="document.getElementById('modal').style.display='block'">Открыть!</button>
+            <button id="open-modal-button" class="open-modal-button gradient" type="button">Открыть!</button>
         </div>
 
         <div id="modal" class="modal">
@@ -31,7 +31,9 @@
                                 <label for="organiztaion" class="placeholder-effect placeholder"><span>✱</span> Название организации</label>
                             </div>
                             <div class="input-container">
-                                <input id="phone" class="label-effect input" type="tel" placeholder=" " required />
+                                <input id="phone" class="label-effect input" type="tel" placeholder=" "
+                                pattern="\+7\s[0-9]{3}\s[0-9]{3}[-][0-9]{2}[-][0-9]{2}" title='Phone Number (Format: +7 933 848-34-33)' required />
+                                
                                 <label for="phone" class="placeholder-effect placeholder"><span>✱</span> Телефон</label>
                             </div>
                             <div class="input-container">
@@ -108,7 +110,7 @@
                     </div>
                 </div>
                 <input class="submit-button" type="submit" value="Стать партнёром проекта" />
-                <input id="reset" class="reset-button" type="reset" value="Отменить" onclick="document.getElementById('modal').style.display='none'"/>
+                <input id="cancel-button" class="cancel-button" type="reset" value="Отменить" />
             </form>
         </div>
     </div>
