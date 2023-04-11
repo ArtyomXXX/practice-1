@@ -30,6 +30,7 @@ document.querySelectorAll('.dropdown').forEach(function (dropDownWrapper) {
 
 	// Клик по кнопке. Открыть/Закрыть select
 	dropDownBtn.addEventListener('click', function (e) {
+		this.classList.add('select-js-label-effect');
 		dropDownList.classList.toggle('dropdown__list--visible');
 	});
 
